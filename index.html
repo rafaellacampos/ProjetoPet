@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petmania - PetShop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/fotos-gratis/celebracao-do-dia-mundial-do-animal-com-cachorro-fofo_23-2149477527.jpg?t=st=1710879337~exp=1710882937~hmac=1be9e26a2633ce4bd4d398d9853ae41442d37963a43bf8d55a9774baa93badf0&w=740');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin-top: 60px; /* Ajuste o valor conforme necessário */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+<head>
+ /* Carrossel */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Botões de navegação do carrossel */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Texto do carrossel */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Número da imagem do carrossel */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Legenda do carrossel */
+        .caption-container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background
+        }
+    </style>
+</head>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Petmania - PetShop</h1>
+        <nav>
+            <a href="#sobre-nos">SOBRE NÓS</a>
+            <a href="#produtos">PRODUTOS</a>
+            <a href="#servicos">SERVIÇOS</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+    </header>
+
+    <section id="sobre-nos" class="container">
+        <h2>Sobre Nós</h2>
+        <p>Na Petmania, temos paixão por animais. Nosso compromisso é fornecer os melhores produtos e serviços para garantir a saúde e o bem-estar do seu animal de estimação. Desde 2012 temos o compromisso de trazer o melhor serviço possível para nosso cliente e conforto de seu Pet, por isso criamos experiências inesquecíveis.</p>
+    </section>
+
+    <section id="servicos" class="container">
+<!-- Carrossel de imagens -->
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="imagem1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="imagem2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="imagem3.jpg" style="width:100%">
+    </div>
+
+    <!-- Botões de navegação do carrossel -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- Indicadores do carrossel -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+        <h2>Serviços</h2>
+        <p><strong>Banho:</strong> Para animais de pequeno e grande porte.</p>
+        <p><strong>Tosa:</strong> Para animais de pequeno e grande porte.</p>
+        <p><em>Descrição: </em> Oferecemos serviços de banho e tosa para garantir o conforto e a higiene do seu pet. Nossos profissionais são treinados para lidar com animais de todos os tamanhos e temperamentos. Utilizamos produtos de qualidade e técnicas seguras para proporcionar uma experiência tranquila e agradável para o seu pet. Agende um horário conosco!</p>
+    </section>
+
+    <section id="produtos" class="container">
+        <h2>Produtos Disponíveis</h2>
+        <p><strong>Ração Seca:</strong> Opção 1, Opção 2</p>
+        <p><strong>Ração Úmida:</strong> Opção 1, Opção 2</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Petmania - Todos os direitos reservados.</p>
+ 	<p>Avenida das Flores, 186 - Porto Alegre, RS. (51) 8746-4782</p>
+    </footer>
+<script>
+</script>
+</body>
+</html>

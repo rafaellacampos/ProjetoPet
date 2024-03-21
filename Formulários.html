@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petmania - PetShop</title>
+    <style>
+        /* Adicione estilos CSS conforme necessário */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cadastro de Pet</h2>
+    <form action="#" method="post">
+        <label for="nome_pet">Nome do Pet:</label>
+        <input type="text" id="nome_pet" name="nome_pet" required>
+
+        <label for="tipo_pet">Tipo:</label>
+        <select id="tipo_pet" name="tipo_pet" required>
+            <option value="">Selecione...</option>
+            <option value="gato">Gato</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label for="raca_pet">Raça:</label>
+        <select id="raca_pet" name="raca_pet" required>
+            <option value="">Selecione...</option>
+            <option value="vira-lata">Vira-Lata</option>
+            <option value="labrador">Labrador</option>
+            <option value="poodle">Poodle</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="pastor-alemão">Pastor Alemão</option>
+            <option value="golden-retriever">Golden Retriever</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <label for="temperamento_pet">Temperamento:</label>
+        <select id="temperamento_pet" name="temperamento_pet" required>
+            <option value="">Selecione...</option>
+            <option value="calmo">Calmo</option>
+            <option value="agressivo">Agressivo</option>
+            <option value="agitado">Agitado</option>
+        </select>
+
+        <label for="porte_pet">Porte:</label>
+        <select id="porte_pet" name="porte_pet">
+            <option value="pequeno">Pequeno</option>
+            <option value="médio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <label for="agenda_ou_telebusca">Método de busca:</label>
+        <select id="agenda_ou_telebusca" name="agenda_ou_telebusca">
+            <option value="agendar">Agendar</option>
+            <option value="telebusca">TeleBusca</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Cadastro de Tutor</h2>
+    <form action="#" method="post">
+        <label for="nome_tutor">Nome:</label>
+        <input type="text" id="nome_tutor" name="nome_tutor" required>
+
+        <label for="endereco_tutor">Endereço:</label>
+        <input type="text" id="endereco_tutor" name="endereco_tutor" required>
+
+        <label for="telefone_tutor">Telefone:</label>
+        <input type="tel" id="telefone_tutor" name="telefone_tutor" required>
+
+        <label for="email_tutor">E-mail:</label>
+        <input type="email" id="email_tutor" name="email_tutor" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+

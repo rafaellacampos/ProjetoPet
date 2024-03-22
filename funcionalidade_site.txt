@@ -1,0 +1,29 @@
+Funcionalidades da Página Web Petshop
+
+Visão Geral
+O site do Petmania é uma plataforma online destinada a fornecer informações sobre os serviços oferecidos pelo petshop, além de permitir que os usuários cadastrem seus animais de estimação (pets) e seus respectivos tutores. A página visa criar uma experiência intuitiva e agradável para os usuários, permitindo-lhes acessar facilmente as informações necessárias e realizar cadastros de forma eficiente.
+Funcionalidades
+Cadastro de Pet
+	•	Nome do Pet: Campo para inserção do nome do animal de estimação.
+	•	Tipo: Opção para selecionar o tipo de animal de estimação, incluindo gato, cachorro e outros animais.
+	•	Raça: Opção para selecionar a raça do pet a partir de uma lista pré-definida que inclui várias opções comuns.
+	•	Temperamento: Opção para selecionar o temperamento do animal, permitindo que os usuários descrevam o comportamento do pet.
+	•	Porte: Opção para selecionar o porte do pet, classificado como pequeno, médio ou grande.
+	•	Método de Busca: Opção para selecionar o método preferido de busca para agendar serviços, como agendamento prévio ou telebusca.
+Cadastro de Tutor
+	•	Nome: Campo para inserção do nome do tutor responsável pelo animal.
+	•	Endereço: Campo para inserção do endereço do tutor, facilitando a comunicação e localização.
+	•	Telefone: Campo para inserção do número de telefone do tutor para contato rápido e direto.
+	•	E-mail: Campo para inserção do endereço de e-mail do tutor, permitindo uma forma adicional de contato e comunicação.
+Estilos Visuais
+	•	Os elementos visuais são projetados para serem consistentes e intuitivos, facilitando a compreensão e a navegação para os usuários.
+	•	Os formulários são estilizados com bordas arredondadas, sombras suaves e campos bem espaçados para uma experiência visualmente agradável.
+	•	Os botões de envio são realçados com uma cor de destaque para chamar a atenção e incentivar a interação dos usuários.
+Responsividade
+	•	O design responsivo garante que o site seja visualizado de forma ideal em uma variedade de dispositivos, incluindo desktops, tablets e smartphones.
+	•	A adaptação da interface de usuário garante que os elementos da página sejam dispostos de maneira eficiente e intuitiva, independentemente do tamanho da tela.
+	•	A navegação é simplificada em dispositivos móveis, com menus e botões adaptados para toque e gestos de deslizar.
+Conclusão
+O site do Petmania é uma plataforma abrangente que oferece uma experiência completa para os usuários interessados em acessar informações sobre os serviços do petshop e cadastrar seus pets e tutores. Com um design intuitivo, funcionalidades úteis e uma estética visualmente atraente, o site visa proporcionar uma experiência online agradável e eficiente para todos os clientes em potencial.
+
+

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Definição do conjunto de caracteres e da viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petmania - PetShop</title>
+    <!-- Estilos CSS -->
     <style>
-        /* Adicione estilos CSS conforme necess�rio */
+        /* Estilos gerais para o corpo do documento */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,10 +16,12 @@
             text-align: center;
         }
 
+        /* Estilos para títulos de seção */
         h2 {
             margin-top: 30px;
         }
 
+        /* Estilos para o formulário */
         form {
             max-width: 400px;
             margin: 0 auto;
@@ -28,11 +32,13 @@
             text-align: left;
         }
 
+        /* Estilos para rótulos de entrada */
         label {
             display: block;
             margin-bottom: 5px;
         }
 
+        /* Estilos para campos de entrada */
         input[type="text"],
         input[type="email"],
         input[type="tel"],
@@ -45,10 +51,12 @@
             box-sizing: border-box;
         }
 
+        /* Estilos específicos para selects */
         select {
             height: 40px;
         }
 
+        /* Estilos para botões de envio */
         button[type="submit"] {
             background-color: #4CAF50;
             color: white;
@@ -60,17 +68,21 @@
             font-size: 16px;
         }
 
+        /* Estilos para o botão de envio ao passar o mouse */
         button[type="submit"]:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
+    <!-- Título e formulário de cadastro de pet -->
     <h2>Cadastro de Pet</h2>
     <form action="#" method="post">
+        <!-- Campo para o nome do pet -->
         <label for="nome_pet">Nome do Pet:</label>
         <input type="text" id="nome_pet" name="nome_pet" required>
 
+        <!-- Campo para selecionar o tipo de pet -->
         <label for="tipo_pet">Tipo:</label>
         <select id="tipo_pet" name="tipo_pet" required>
             <option value="">Selecione...</option>
@@ -79,18 +91,20 @@
             <option value="outros">Outros</option>
         </select>
 
-        <label for="raca_pet">Ra�a:</label>
+        <!-- Campo para selecionar a raça do pet -->
+        <label for="raca_pet">Raça:</label>
         <select id="raca_pet" name="raca_pet" required>
             <option value="">Selecione...</option>
             <option value="vira-lata">Vira-Lata</option>
             <option value="labrador">Labrador</option>
             <option value="poodle">Poodle</option>
             <option value="bulldog">Bulldog</option>
-            <option value="pastor-alem�o">Pastor Alem�o</option>
+            <option value="pastor-alemão">Pastor Alemão</option>
             <option value="golden-retriever">Golden Retriever</option>
             <option value="outros">Outros</option>
         </select>
 
+        <!-- Campo para selecionar o temperamento do pet -->
         <label for="temperamento_pet">Temperamento:</label>
         <select id="temperamento_pet" name="temperamento_pet" required>
             <option value="">Selecione...</option>
@@ -99,39 +113,49 @@
             <option value="agitado">Agitado</option>
         </select>
 
+        <!-- Campo para selecionar o porte do pet -->
         <label for="porte_pet">Porte:</label>
         <select id="porte_pet" name="porte_pet">
             <option value="pequeno">Pequeno</option>
-            <option value="m�dio">M�dio</option>
+            <option value="médio">Médio</option>
             <option value="grande">Grande</option>
         </select>
 
-        <label for="agenda_ou_telebusca">M�todo de busca:</label>
+        <!-- Campo para selecionar o método de busca -->
+        <label for="agenda_ou_telebusca">Método de busca:</label>
         <select id="agenda_ou_telebusca" name="agenda_ou_telebusca">
             <option value="agendar">Agendar</option>
             <option value="telebusca">TeleBusca</option>
         </select>
 
+        <!-- Botão de envio do formulário -->
         <button type="submit">Enviar</button>
     </form>
 
+    <!-- Título e formulário de cadastro de tutor -->
     <h2>Cadastro de Tutor</h2>
     <form action="#" method="post">
+        <!-- Campo para o nome do tutor -->
         <label for="nome_tutor">Nome:</label>
         <input type="text" id="nome_tutor" name="nome_tutor" required>
 
-        <label for="endereco_tutor">Endere�o:</label>
+        <!-- Campo para o endereço do tutor -->
+        <label for="endereco_tutor">Endereço:</label>
         <input type="text" id="endereco_tutor" name="endereco_tutor" required>
 
+        <!-- Campo para o telefone do tutor -->
         <label for="telefone_tutor">Telefone:</label>
         <input type="tel" id="telefone_tutor" name="telefone_tutor" required>
 
+        <!-- Campo para o email do tutor -->
         <label for="email_tutor">E-mail:</label>
         <input type="email" id="email_tutor" name="email_tutor" required>
 
+        <!-- Botão de envio do formulário -->
         <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
+
 
 

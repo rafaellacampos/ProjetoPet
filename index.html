@@ -1,151 +1,137 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Tipo de documento HTML -->
+<html lang="pt-BR"> 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós - Petmania</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sobre Nós - Petmania</title> <!-- Título da página -->
     <!-- CSS do Bootstrap (CDN) -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"> <!-- Link para o arquivo CSS do Bootstrap -->
     <style>
         /* Estilos personalizados */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://img.freepik.com/fotos-gratis/celebracao-do-dia-mundial-do-animal-com-cachorro-fofo_23-2149477527.jpg?t=st=1710879337~exp=1710882937~hmac=1be9e26a2633ce4bd4d398d9853ae41442d37963a43bf8d55a9774baa93badf0&w=740');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: Arial, sans-serif; /* Fonte para o corpo do texto */
+            margin: 0; /* Remoção das margens externas */
+            padding: 0; /* Remoção do preenchimento */
+            background-image: url('https://img.freepik.com/fotos-gratis/celebracao-do-dia-mundial-do-animal-com-cachorro-fofo_23-2149477527.jpg?t=st=1710879337~exp=1710882937~hmac=1be9e26a2633ce4bd4d398d9853ae41442d37963a43bf8d55a9774baa93badf0&w=740'); /* Imagem de fundo */
+            background-size: cover; /* Redimensionamento da imagem para cobrir a tela */
+            background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+            background-attachment: fixed; /* Fixar a imagem de fundo */
+            text-align: center; /* Centralizar o texto */
+            display: flex; /* Exibição em formato de flexbox */
+            flex-direction: column; /* Direção dos itens flexíveis */
+            align-items: center; /* Alinhamento dos itens no eixo transversal */
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px 0;
-            position: relative;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do cabeçalho com transparência */
+            color: #fff; /* Cor do texto do cabeçalho */
+            padding: 10px 0; /* Preenchimento interno do cabeçalho */
+            position: fixed; /* Posicionamento fixo */
+            top: 0; /* Distância do topo */
+            width: 100%; /* Largura total */
+            z-index: 1000; /* Índice Z para sobreposição */
         }
 
         header h1 {
-            margin: 0;
-            font-size: 28px;
-            font-weight: bold;
+            margin: 0; /* Remoção das margens do título */
+            font-size: 24px; /* Tamanho da fonte do título */
         }
 
         nav {
-            margin-top: 10px;
+            margin-top: 10px; /* Margem superior do menu de navegação */
         }
 
         nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
+            color: #fff; /* Cor dos links */
+            text-decoration: none; /* Remoção do sublinhado dos links */
+            margin: 0 10px; /* Margem dos links */
         }
 
         .container {
-            max-width: 2000px;
-            margin-top: 0px; /* Ajuste conforme necessário */
-            padding: 100px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            text-align: left;
-            margin-bottom: 0px;
+            max-width: 800px; /* Largura máxima do container */
+            margin-top: 200px; /* Margem superior do container */
+            padding: 20px; /* Preenchimento interno do container */
+            background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo do container com transparência */
+            border-radius: 8px; /* Borda arredondada */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            text-align: left; /* Alinhamento do texto à esquerda */
         }
 
         h2 {
-            margin-top: 20px;
-            font-size: 24px;
-            color: #333;
+            margin-top: 20px; /* Margem superior do título h2 */
         }
 
         p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #666;
+            margin-top: 10px; /* Margem superior do parágrafo */
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px 0;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo do rodapé com transparência */
+            color: #fff; /* Cor do texto do rodapé */
+            padding: 10px 0; /* Preenchimento interno do rodapé */
+            width: 100%; /* Largura total */
+            position: relative; /* Posicionamento relativo */
+            bottom: 0; /* Distância do rodapé ao final do conteúdo */
         }
 
         footer p {
-            margin: 0;
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: 100%;
+            margin: 0; /* Remoção das margens do parágrafo */
+            font-size: 14px; /* Tamanho da fonte do parágrafo */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Petmania - PetShop</h1>
+        <h1>Petmania - PetShop</h1> <!-- Título do cabeçalho -->
         <nav>
-            <a href="sobrenos.html">SOBRE NÓS</a>
-            <a href="Produtos.html">PRODUTOS</a>
-            <a href="Servicos.html">SERVIÇOS</a>
-            <a href="Contato.html">CONTATO</a>
+            <a href="sobrenos.html">SOBRE NÓS</a> <!-- Link para a página "Sobre Nós" -->
+            <a href="Produtos.html">PRODUTOS</a> <!-- Link para a página "Produtos" -->
+            <a href="Servicos.html">SERVIÇOS</a> <!-- Link para a página "Serviços" -->
+            <a href="Contato.html">CONTATO</a> <!-- Link para a página "Contato" -->
         </nav>
     </header>
-    <div class="container">
-        <section id="sobre-nos">
-            <h2>Sobre Nós</h2>
-            <p>Na Petmania, temos paixão por animais. Nosso compromisso é fornecer os melhores produtos e serviços para garantir a saúde e o bem-estar do seu animal de estimação. Desde 2012 temos o compromisso de trazer o melhor serviço possível para nosso cliente e conforto de seu Pet, por isso criamos experiências inesquecíveis.</p>
-        </section>
-    </div>
-    <!-- Carrossel de imagens -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGAGQuZkg8/COLOv8NVU4J0uFsvzqzKsQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-                </div>
-                <a href="https://www.canva.com/design/DAGAGQuZkg8/COLOv8NVU4J0uFsvzqzKsQ/view?utm_content=DAGAGQuZkg8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Orange Cat Day Sale Banner Landscape</a> de raah.faelacm
-            </div>
-            <div class="carousel-item">
-                <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGAGKwcqI8/IhHX0F-3GbEuILgHh3ODzg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-                </div>
-                <a href="https://www.canva.com/design/DAGAGKwcqI8/IhHX0F-3GbEuILgHh3ODzg/view?utm_content=DAGAGKwcqI8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Blue New Opening Pet Shop Banner</a> de raah.faelacm
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
-    </div>
-    <footer>
-        <p>&copy; 2024 Petmania - Todos os direitos reservados.</p>
-        <p>Avenida das Flores, 186 - Porto Alegre, RS. (51) 8746-4782</p>
-    </footer>
 
-    <!-- JavaScript do Bootstrap (CDN), necessário para alguns componentes -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Trocar de imagem automaticamente a cada 2 segundos
-        $('.carousel').carousel({
-            interval: 2000
-        });
-    </script>
-</body>
-</html>
+    <div class="container"> <!-- Container principal -->
+        <section id="sobre-nos"> <!-- Seção "Sobre Nós" -->
+            <h2>Sobre Nós</h2> <!-- Título da seção -->
+            <p>Na Petmania, temos paixão por animais. Nosso compromisso é fornecer os melhores produtos e serviços para garantir a saúde e o bem-estar do seu animal de estimação. Desde 2012 temos o compromisso de trazer o melhor serviço possível para nosso cliente e conforto de seu Pet, por isso criamos experiências inesquecíveis.</p> <!-- Texto sobre a empresa -->
+        </section>
+        <!-- Carrossel de imagens -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!-- Carrossel de imagens do Bootstrap -->
+            <div class="carousel-inner"> <!-- Conteúdo do carrossel -->
+                <div class="carousel-item active"> <!-- Item do carrossel ativo -->
+                    <!-- Conteúdo do primeiro slide -->
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;                    border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGAGQuZkg8/COLOv8NVU4J0uFsvzqzKsQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+                    </div>
+                    <a href="https://www.canva.com/design/DAGAGQuZkg8/COLOv8NVU4J0uFsvzqzKsQ/view?utm_content=DAGAGQuZkg8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Orange Cat Day Sale Banner Landscape</a> de raah.faelacm
+                </div>
+                <div class="carousel-item">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 50.0000%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGAGKwcqI8/IhHX0F-3GbEuILgHh3ODzg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+                    </div>
+                    <a href="https://www.canva.com/design/DAGAGKwcqI8/IhHX0F-3GbEuILgHh3ODzg/view?utm_content=DAGAGKwcqI8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Blue New Opening Pet Shop Banner</a> de raah.faelacm
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        </div>
+    
+        <footer>
+            <p>&copy; 2024 Petmania - Todos os direitos reservados.</p>
+            <p>Avenida das Flores, 186 - Porto Alegre, RS. (51) 8746-4782</p>
+        </footer>
+    
+        <!-- JavaScript do Bootstrap (CDN), necessário para alguns componentes -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script> <!-- Inclusão do script JavaScript do Bootstrap -->
+    </body>
+    </html>
+    
 
